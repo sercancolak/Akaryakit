@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Akaryakit</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/sidenav.css" rel="stylesheet" />
+    <link href="css/leaflet.css" rel="stylesheet" />
+    <script src="js/leaflet.js"></script>
+    <link href="css/leaflet.draw.css" rel="stylesheet" />
+    <script src="js/leaflet.draw.js"></script>
+ 
+    <link href="css/MarkerCluster.Default.css" rel="stylesheet" />
+    <script src="js/leaflet.markercluster.js"></script>
+
+
+    <style>
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            width: 140px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidenav">
+        <select id="cmbSehir">
+            <option>Şehir Seç</option>
+        </select>
+        <br />
+        <button class="btn-primary" id='gosterSehir' style="top:250px;">Akaryakıtları Göster</button>
+    </div>
+    <div id="map">
+        <script src="js/module.js"></script>
+    </div>
+</body>
+
+</html>
